@@ -15,6 +15,7 @@ namespace Arduino_LED
         public Main()
         {
             InitializeComponent();
+            //Kontakta servern, try catch
         }
 
         private void Main_Load(object sender, EventArgs e)
