@@ -13,7 +13,7 @@ namespace Arduino_LED
     public partial class Main : Form
     {
         public Main()
-        {
+        { 
             InitializeComponent();
             //Kontakta servern, try catch
         }
