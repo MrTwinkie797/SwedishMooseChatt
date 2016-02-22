@@ -39,6 +39,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.LoginBttn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // serialPort1
@@ -128,12 +129,23 @@
             this.label2.Text = "Password";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // LoginBttn
+            // 
+            this.LoginBttn.Location = new System.Drawing.Point(48, 413);
+            this.LoginBttn.Name = "LoginBttn";
+            this.LoginBttn.Size = new System.Drawing.Size(185, 110);
+            this.LoginBttn.TabIndex = 10;
+            this.LoginBttn.Text = "Login2";
+            this.LoginBttn.UseVisualStyleBackColor = true;
+            this.LoginBttn.Click += new System.EventHandler(this.LoginBttn_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1166, 652);
+            this.Controls.Add(this.LoginBttn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
@@ -162,6 +174,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button LoginBttn;
     }
 }
 

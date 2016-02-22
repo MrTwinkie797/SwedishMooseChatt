@@ -25,7 +25,7 @@ namespace Arduino_LED
 
         private void button2_Click(object sender, EventArgs e)
         {
-            serialPort1.Write("h");
+            serialPort1.Write("k");
             Console.Beep();
         }
 
@@ -41,16 +41,26 @@ namespace Arduino_LED
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Hide();
+           
             Main ss = new Main();
+            ss.Closed += (s, args) => this.Close();
             ss.Show();
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
             Register ss = new Register();
+            ss.Closed += (s, args) => this.Close();
             ss.Show();
+        }
+
+        private void LoginBttn_Click(object sender, EventArgs e)
+        {
+            Main main = new Main();
+            main.Show();
+            this.Close();
         }
     }
 }
