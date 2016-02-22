@@ -15,18 +15,6 @@ namespace Arduino_LED
         public Login()
         {
             InitializeComponent();
-            serialPort1.Open();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            serialPort1.Write("A");
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            serialPort1.Write("k");
-            Console.Beep();
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -54,13 +42,6 @@ namespace Arduino_LED
             Register ss = new Register();
             ss.Closed += (s, args) => this.Close();
             ss.Show();
-        }
-
-        private void LoginBttn_Click(object sender, EventArgs e)
-        {
-            Main main = new Main();
-            main.Show();
-            this.Close();
         }
     }
 }

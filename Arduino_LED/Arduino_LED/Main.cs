@@ -15,6 +15,7 @@ namespace Arduino_LED
         public Main()
         {
             InitializeComponent();
+            serialPort1.Open();
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -30,6 +31,17 @@ namespace Arduino_LED
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            serialPort1.Write("k");
+            Console.Beep();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            serialPort1.Write("A");
         }
     }
 }

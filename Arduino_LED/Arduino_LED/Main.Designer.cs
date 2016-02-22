@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -38,6 +39,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.Light_Off = new System.Windows.Forms.Button();
+            this.Light_On = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -95,9 +99,9 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(973, 37);
+            this.button2.Location = new System.Drawing.Point(957, 37);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 37);
+            this.button2.Size = new System.Drawing.Size(157, 37);
             this.button2.TabIndex = 5;
             this.button2.Text = "Profile";
             this.button2.UseVisualStyleBackColor = true;
@@ -138,12 +142,40 @@
             this.button5.Text = "Send";
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // serialPort1
+            // 
+            this.serialPort1.PortName = "COM3";
+            // 
+            // Light_Off
+            // 
+            this.Light_Off.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Light_Off.Location = new System.Drawing.Point(957, 104);
+            this.Light_Off.Name = "Light_Off";
+            this.Light_Off.Size = new System.Drawing.Size(157, 63);
+            this.Light_Off.TabIndex = 10;
+            this.Light_Off.Text = "ON";
+            this.Light_Off.UseVisualStyleBackColor = true;
+            this.Light_Off.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // Light_On
+            // 
+            this.Light_On.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Light_On.Location = new System.Drawing.Point(957, 191);
+            this.Light_On.Name = "Light_On";
+            this.Light_On.Size = new System.Drawing.Size(157, 63);
+            this.Light_On.TabIndex = 9;
+            this.Light_On.Text = "OFF";
+            this.Light_On.UseVisualStyleBackColor = true;
+            this.Light_On.Click += new System.EventHandler(this.button7_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1155, 651);
+            this.Controls.Add(this.Light_Off);
+            this.Controls.Add(this.Light_On);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button4);
@@ -174,5 +206,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Light_Off;
+        private System.Windows.Forms.Button Light_On;
+        private System.IO.Ports.SerialPort serialPort1;
     }
 }
