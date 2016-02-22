@@ -48,9 +48,10 @@
             // Light_On
             // 
             this.Light_On.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Light_On.Location = new System.Drawing.Point(12, 12);
+            this.Light_On.Location = new System.Drawing.Point(8, 8);
+            this.Light_On.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Light_On.Name = "Light_On";
-            this.Light_On.Size = new System.Drawing.Size(157, 63);
+            this.Light_On.Size = new System.Drawing.Size(105, 40);
             this.Light_On.TabIndex = 0;
             this.Light_On.Text = "ON";
             this.Light_On.UseVisualStyleBackColor = true;
@@ -59,9 +60,10 @@
             // Light_Off
             // 
             this.Light_Off.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Light_Off.Location = new System.Drawing.Point(12, 81);
+            this.Light_Off.Location = new System.Drawing.Point(8, 52);
+            this.Light_Off.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Light_Off.Name = "Light_Off";
-            this.Light_Off.Size = new System.Drawing.Size(157, 63);
+            this.Light_Off.Size = new System.Drawing.Size(105, 40);
             this.Light_Off.TabIndex = 1;
             this.Light_Off.Text = "OFF";
             this.Light_Off.UseVisualStyleBackColor = true;
@@ -70,30 +72,34 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(272, 237);
+            this.linkLabel1.Location = new System.Drawing.Point(181, 152);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(0, 25);
+            this.linkLabel1.Size = new System.Drawing.Size(0, 17);
             this.linkLabel1.TabIndex = 2;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(545, 385);
+            this.textBox1.Location = new System.Drawing.Point(363, 246);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(371, 31);
+            this.textBox1.Size = new System.Drawing.Size(249, 22);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(545, 309);
+            this.textBox2.Location = new System.Drawing.Point(363, 198);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(371, 31);
+            this.textBox2.Size = new System.Drawing.Size(249, 22);
             this.textBox2.TabIndex = 5;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(545, 483);
+            this.button3.Location = new System.Drawing.Point(363, 309);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 40);
+            this.button3.Size = new System.Drawing.Size(83, 26);
             this.button3.TabIndex = 6;
             this.button3.Text = "Register";
             this.button3.UseVisualStyleBackColor = true;
@@ -101,9 +107,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(792, 483);
+            this.button4.Location = new System.Drawing.Point(528, 309);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(124, 40);
+            this.button4.Size = new System.Drawing.Size(83, 26);
             this.button4.TabIndex = 7;
             this.button4.Text = "Login";
             this.button4.UseVisualStyleBackColor = true;
@@ -112,28 +119,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(422, 315);
+            this.label1.Location = new System.Drawing.Point(281, 202);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 25);
+            this.label1.Size = new System.Drawing.Size(73, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "Username";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(422, 388);
+            this.label2.Location = new System.Drawing.Point(281, 248);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 25);
+            this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 9;
             this.label2.Text = "Password";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1166, 652);
+            this.ClientSize = new System.Drawing.Size(777, 417);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
@@ -143,6 +152,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.Light_Off);
             this.Controls.Add(this.Light_On);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);
