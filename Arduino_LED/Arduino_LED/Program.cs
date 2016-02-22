@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,11 +12,17 @@ namespace Arduino_LED
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
+
+            Console.WriteLine("Clicka enter för att skicka text");
+            Console.ReadLine();
+            Client cl = new Client();
+            cl.SendMessage("Hejsan! detta är från clienten", "127.0.0.1", 8145);
         }
-    }    
+
+    }
 }
