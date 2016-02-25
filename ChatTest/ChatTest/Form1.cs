@@ -78,7 +78,7 @@ namespace ChatTest
 
                 buffer = new byte[1500];
                 sck.BeginReceiveFrom(buffer, 0, buffer.Length, SocketFlags.None, ref epRemote, new AsyncCallback(MessageCallBack), buffer);
-
+                 
             }
             catch(Exception ex)
             {
