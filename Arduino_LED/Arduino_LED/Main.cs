@@ -15,7 +15,7 @@ namespace Arduino_LED
         public Main()
         {
             InitializeComponent();
-            serialPort1.Open();
+            //serialPort1.Open();
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -25,7 +25,9 @@ namespace Arduino_LED
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Profile ss = new Profile();
+            ss.Closed += (s, args) => this.Hide();
+            ss.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -35,13 +37,18 @@ namespace Arduino_LED
 
         private void button7_Click(object sender, EventArgs e)
         {
-            serialPort1.Write("k");
-            Console.Beep();
+       
+            //serialPort1.Write("k");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            serialPort1.Write("A");
+            Sender se = new Sender();
+            //se.SendMessage(ipAddress, port);
+
+
+            //serialPort1.Write("A");
+
         }
     }
 }
