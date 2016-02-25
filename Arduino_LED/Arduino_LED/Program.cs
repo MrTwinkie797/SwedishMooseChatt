@@ -21,7 +21,7 @@ namespace Arduino_LED
             Console.WriteLine("Clicka enter för att skicka text");
             Console.ReadLine();
             Client cl = new Client();
-            cl.SendMessage("Hejsan! detta är från clienten", "127.0.0.1", 8145);
+            cl.SendMessage("Hejsan! detta är från clienten", "10.42.105.213", 8145);
         }
 
     }
