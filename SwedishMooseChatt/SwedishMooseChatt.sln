@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{284DC387-895E-4D3C-A09B-5C0E6BDC1CD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A751937-08BF-4297-842D-F91E524D97D4}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SwedishMooseChatt", "src\SwedishMooseChatt\SwedishMooseChatt.xproj", "{EAA7382D-F0C5-4317-98E8-EFAC6D451655}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAA7382D-F0C5-4317-98E8-EFAC6D451655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA7382D-F0C5-4317-98E8-EFAC6D451655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA7382D-F0C5-4317-98E8-EFAC6D451655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA7382D-F0C5-4317-98E8-EFAC6D451655}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EAA7382D-F0C5-4317-98E8-EFAC6D451655} = {284DC387-895E-4D3C-A09B-5C0E6BDC1CD4}
+	EndGlobalSection
+EndGlobal
