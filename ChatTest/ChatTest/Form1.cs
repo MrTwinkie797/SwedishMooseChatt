@@ -22,6 +22,7 @@ namespace ChatTest
         public Form1()
         {
             InitializeComponent();
+            serialPort1.Open();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -86,6 +87,22 @@ namespace ChatTest
             }
 
         }
+
+        private void textLocalIp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lign_On_Button_Click(object sender, EventArgs e)
+        {
+            serialPort1.Write("A");
+        }
+
+        private void Light_Off_Button_Click(object sender, EventArgs e)
+        {
+            serialPort1.Write("k");
+        }
+
         private void buttonSend_Click(object sender, EventArgs e)
         {
             //Convert string message to byte[]
